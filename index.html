@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smoot">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Play:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header
+      class="bg-transparent w-full left-0 top-0 fixed flex items-center font-Poppins  z-50"
+    >
+      <div class="container">
+        <div class="flex justify-between items-center relative">
+          <div class="px-4">
+            <a
+              href="#"
+              class="py-6 block text-primary text-xl font-bold lg:text-2xl"
+              >Rido<span class="text-secondary">Ferdian</span></a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute block right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-200 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-200 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-200 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="menu"
+              class="hidden w-full max-w-[250px] bg-white rounded-lg top-full py-5 shadow-lg absolute right-4 lg:block lg:static lg:bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#"
+                    class="flex mx-8 py-2 text-base text-dark group-hover:text-secondary lg:mx-3"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="flex mx-8 py-2 text-base text-dark group-hover:text-secondary lg:mx-3"
+                    >About Me</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#skill"
+                    class="flex mx-8 py-2 text-base text-dark group-hover:text-secondary lg:mx-3"
+                    >Skills</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#project"
+                    class="flex mx-8 py-2 text-base text-dark group-hover:text-secondary lg:mx-3"
+                    >Project</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#kualifikasi"
+                    class="flex mx-8 py-2 text-base text-dark group-hover:text-secondary lg:mx-3"
+                  >
+                    Qualification</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="flex mx-8 py-2 text-base text-dark group-hover:text-secondary lg:mx-3"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- navbar end -->
+
+    <!-- section start -->
+    <section
+      id="home"
+      class="pb-10 font-Nunito bg-gradient-to-tr from-white from-50% via-sky-300 via-80% to-white to-100%"
+    >
+      <div
+        class="container min-h-screen mx-auto pt-28 flex flex-col items-center justify-center md:min-h-[80vh] md:items-center md:flex-row md:justify-between lg:min-h-screen md:px-10"
+      >
+        <div
+          class="w-full font-Ubuntu text-center order-2 md:order-2 md:text-start md:right-4 lg:left-16 xl:left-32 relative"
+        >
+          <h1 class="text-base text-secondary font-semibold xl:text-lg">
+            Halo Semua 👋 Saya
+            <span class="block text-4xl text-dark lg:text-5xl xl:text-6xl">
+              Rido Ferdian
+            </span>
+          </h1>
+          <h2 class="font-medium text-lg mb-5 xl:text-xl">Mahasiswa</h2>
+          <p class="font-medium text-base xl:text-lg">
+            Belajar programming itu sangat menyenangkan
+          </p>
+        </div>
+        <div
+          class="flex items-center justify-center mt-5 order-3 md:order-1 md:top-[2px] md:block lg:left-20 lg:top-[5px] relative xl:left-36 xl:top-0"
+        >
+          <a
+            href="https://instagram.com/ridoferdia"
+            target="_blank"
+            class="w-9 h-9 mr-5 flex text-secondary hover:text-primary hover:bg-slate-200 mb-4"
+          >
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Instagram</title>
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://youtube.com/crasgmg"
+            target="_blank"
+            class="w-9 h-9 mr-5 flex text-secondary hover:text-primary hover:bg-slate-200 mb-4"
+          >
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>YouTube</title>
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://youtube.com/crasgmg"
+            target="_blank"
+            class="w-9 h-9 mr-5 flex hover:text-primary hover:bg-slate-200 mb-4"
+          >
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+            >
+              <title>TikTok</title>
+              <path
+                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="order-1 md:order-3 lg:right-28 relative">
+          <div
+            class="bg-gradient-to-b from-sky-400 shadow-lg to-white- h-[270px] w-full px-28 absolute left-0 bottom-20 rounded-md xl:h-[320px]"
+            style="box-shadow: -3px -3px 10px rgb(144, 144, 160)"
+          ></div>
+          <div class="relative -top-20">
+            <img src="dist/img/rido.png" class=" h-[500px] bg-cover bg-center md:w-[550px]  xl:h-[600px]" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section end -->
+
+    <!-- tentang saya start -->
+    <section id="about" class="pt-36 pb-36 -scroll-mt-12">
+      <div class="w-full text-center">
+        <h1 class="font-Chakra text-3xl font-bold lg:text-4xl">About Me</h1>
+        <h4 class="font-medium text-lg font-Play mt-2 lg:text-xl">
+          introduction
+        </h4>
+      </div>
+      <div
+        class="container px-7 flex flex-col mx-auto justify-evenly sm:flex-row md:px-16 xl:px-48"
+      >
+        <div class="w-full mt-10 order-2 text-center sm:w-1/2 md:text-start">
+          <p class="text-base font-Poppins">
+            Halo!! Saya seorang mahasiswa yang memiliki keinginan untuk menjadi
+            backend dev.Saya tertarik dengan dunia pemogramman karena sangat
+            seru untuk di pelajari
+          </p>
+          <div class="flex font-Poppins mt-7 justify-evenly md:justify-start">
+            <h4 class="font-bold text-2xl">
+              08+ <span class="block font-normal text-sm">Lama belajar</span>
+            </h4>
+            <h4 class="font-bold text-2xl md:pl-6">
+              04+ <span class="block font-normal text-sm">Project dibuat</span>
+            </h4>
+          </div>
+        </div>
+        <div class="order-1 mx-auto mt-10 w-1/2">
+          <img
+            src="dist/img/odir.jpg"
+            alt="saya"
+            width="230"
+            class="rounded-md lg:w-[340px]"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- tentang saya end -->
+
+    <!-- skills start -->
+    <section class="pb-36 scroll-mt-24" id="skill">
+      <div class="w-full text-center">
+        <h1 class="font-bold text-3xl font-Chakra lg:text-4xl">Skills</h1>
+        <p class="font-medium text-base font-Play mt-2 md:text-lg lg:text-xl">
+          skills that I have
+        </p>
+      </div>
+      <div class="flex flex-col md:flex-row">
+        <div class="container mt-10">
+          <div class="w-full flex items-center justify-center">
+            <img src="dist/img/skill/front.png" alt="frontend" width="40" />
+            <div class="block px-6">
+              <h3 class="font-bold text-xl lg:text-2xl mb-2">Front-end</h3>
+              <p class="text-base font-Poppins">6 months learning experience</p>
+            </div>
+            <a
+              class="text-blue-500 cursor-pointer transition duration-500 ease-in-out"
+              id="skill-up"
+            >
+              <i data-feather="chevron-up"></i>
+            </a>
+          </div>
+          <div class="w-full hidden" id="skill-klik">
+            <div class="flex justify-center ml-10 mt-4">
+              <div class="mt-8">
+                <div class="flex border border-dark px-6 py-2 rounded-md">
+                  <img
+                    src="dist/img/skill/html.svg"
+                    alt="html"
+                    width="30"
+                    class="relative right-4"
+                  />
+                  <div class="block">
+                    <h4 class="font-bold text-lg font-Ubuntu">Html</h4>
+                    <p class="font-medium text-base font-mono">
+                      learning time 1 month
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center ml-10 mt-4">
+              <div class="">
+                <div class="flex border border-dark px-6 py-2 rounded-md">
+                  <img
+                    src="dist/img/skill/css.svg"
+                    alt="html"
+                    width="30"
+                    class="relative right-4"
+                  />
+                  <div class="block">
+                    <h4 class="font-bold text-lg font-Ubuntu">Css</h4>
+                    <p class="font-medium text-base font-mono">
+                      learning time 3 month
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center ml-10 mt-4">
+              <div class="">
+                <div class="flex border border-dark px-6 py-2 rounded-md">
+                  <img
+                    src="dist/img/skill/bootstrap.svg"
+                    alt="html"
+                    width="30"
+                    class="relative right-4"
+                  />
+                  <div class="block">
+                    <h4 class="font-bold text-lg font-Ubuntu">Bootstrap</h4>
+                    <p class="font-medium text-base font-mono">
+                      learning time 1 month
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center ml-10 mt-4">
+              <div class="">
+                <div class="flex border border-dark px-6 py-2 rounded-md">
+                  <img
+                    src="dist/img/skill/tailwind.svg"
+                    alt="html"
+                    width="30"
+                    class="relative right-4"
+                  />
+                  <div class="block">
+                    <h4 class="font-bold text-lg font-Ubuntu">Tailwind</h4>
+                    <p class="font-medium text-base font-mono">
+                      learning time 3 weeks
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center ml-10 mt-4">
+              <div class="">
+                <div class="flex border border-dark px-6 py-2 rounded-md">
+                  <img
+                    src="dist/img/skill/js.svg"
+                    alt="html"
+                    width="30"
+                    class="relative right-4"
+                  />
+                  <div class="block">
+                    <h4 class="font-bold text-lg font-Ubuntu">Java Script</h4>
+                    <p class="font-medium text-base font-mono">
+                      learning time 2 month
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-10">
+          <div class="w-full flex items-center justify-center">
+            <img src="dist/img/skill/backend.png" alt="frontend" width="40" />
+            <div class="block px-6">
+              <h3 class="font-bold text-xl lg:text-2xl mb-2">Back-end</h3>
+              <p class="text-base font-Poppins">2 months learning experience</p>
+            </div>
+            <a
+              class="text-blue-500 cursor-pointer transition duration-500 ease-in-out"
+              id="skills-up"
+            >
+              <i data-feather="chevron-down"></i>
+            </a>
+          </div>
+          <div class="w-full" id="skills-klik">
+            <div class="flex justify-center ml-10 mt-4">
+              <div class="mt-8">
+                <div class="flex border border-dark px-6 py-2 rounded-md">
+                  <img
+                    src="dist/img/skill/php.svg"
+                    alt="html"
+                    width="30"
+                    class="relative right-4"
+                  />
+                  <div class="block">
+                    <h4 class="font-bold text-lg font-Ubuntu">Php</h4>
+                    <p class="font-medium text-base font-mono">
+                      learning time 1 month
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center ml-10 mt-4">
+              <div class="">
+                <div class="flex border border-dark px-6 py-2 rounded-md">
+                  <img
+                    src="dist/img/skill/mysql.svg"
+                    alt="html"
+                    width="30"
+                    class="relative right-4"
+                  />
+                  <div class="block">
+                    <h4 class="font-bold text-lg font-Ubuntu">Mysql</h4>
+                    <p class="font-medium text-base font-mono">
+                      learning time 1 month
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills end -->
+
+    <!-- project start -->
+    <section id="project" class="pt-8 pb-36 scroll-mt-14">
+      <div class="container">
+        <div class="w-full text-center py-5 mb-10">
+          <div class="max-w-xl mx-auto text-center">
+            <h1 class="font-Chakra font-bold text-3xl lg:text-4xl">Project</h1>
+            <h4
+              class="font-Play font-medium text-base mt-2 md:text-lg lg:text-xl"
+            >
+              project created
+            </h4>
+          </div>
+        </div>
+        <div>
+          <div class="w-full px-4 flex flex-wrap justify-center">
+            <div class="mb-12 p-4 md:w-1/2">
+              <div
+                class="rounded-md shadow-xl overflow-hidden transition"
+                style="box-shadow: 4px 4px 10px gray, -4px -4px 10px gray"
+              >
+                <img src="dist/img/project/2.png" alt="" width="w-full" />
+              </div>
+              <h2
+                class="font-bold text-lg mt-3 font-Ubuntu md:text-xl lg:text-2xl"
+              >
+                Bazaar In Order
+              </h2>
+              <p class="text-xs font-Poppins md:text-sm mb-4">
+                A bazaar is a market that is held over a period of several days.
+                A bazaar can also be interpreted as an activity carried out to
+                sell various kinds of handicrafts, food, drinks and others, some
+                of the proceeds of which go to charity.
+              </p>
+              <button>
+                <a
+                  href="https://Kedaitjkt.tekajesatu1.repl.co"
+                  target="_blank"
+                  class="button-project"
+                  >Look</a
+                >
+              </button>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div
+                class="rounded-md shadow-xl overflow-hidden transition"
+                style="box-shadow: 4px 4px 10px gray, -4px -4px 10px gray"
+              >
+                <img src="dist/img/project/1.png" alt="" width="w-full" />
+              </div>
+              <h2
+                class="font-bold text-lg mt-3 font-Ubuntu md:text-xl lg:text-2xl"
+              >
+                Information About XI Tkj 1 Students
+              </h2>
+              <p class="text-xs font-Poppins mb-4 md:text-sm">
+                Class Xi TKJ 1 is at Muhammadiyah School 6 Rogojampi which has a
+                homeroom teacher named Rezha Aji Kurniawan and has a general
+                class structure
+              </p>
+              <button>
+                <a
+                  href="https://xitkj1.smuherotkj.repl.co/"
+                  target="_blank"
+                  class="button-project"
+                  >Look</a
+                >
+              </button>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div
+                class="rounded-md shadow-xl overflow-hidden transition"
+                style="box-shadow: 4px 4px 10px gray, -4px -4px 10px gray"
+              >
+                <img src="dist/img/project/4.png" alt="" width="w-full" />
+              </div>
+              <h2
+                class="font-bold text-lg mt-3 font-Ubuntu md:text-xl lg:text-2xl"
+              >
+                System Input To The Database
+              </h2>
+              <p class="text-xs font-Poppins mb-4 md:text-sm">
+                A system that has a database. This means that if the user enters
+                anything that is typed or uploaded, it will automatically be
+                saved to the database
+              </p>
+              <button>
+                <a
+                  href="https://webcrass.wuaze.com/"
+                  target="_blank"
+                  class="button-project"
+                  >Look</a
+                >
+              </button>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div
+                class="rounded-md shadow-xl overflow-hidden transition"
+                style="box-shadow: 4px 4px 10px gray, -4px -4px 10px gray"
+              >
+                <img src="dist/img/project/3.png" alt="" width="w-full" />
+              </div>
+              <h2
+                class="font-bold text-lg mt-3 font-Ubuntu md:text-xl lg:text-2xl"
+              >
+                Bazaar In Order To Introduce Traditional Food
+              </h2>
+              <p class="text-xs font-Poppins mb-4 md:text-sm">
+                A food bazaar is a market or culinary exhibition that lasts for
+                several days. Through food bazaars, you can sell various dishes
+                quickly.
+              </p>
+              <button>
+                <a
+                  href="https://tekajesatu.kedaitkj.repl.co"
+                  target="_blank"
+                  class="button-project"
+                  >Look</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project end -->
+
+    <!-- qualification start -->
+    <section id="kualifikasi" class="pb-32 scroll-mt-28">
+      <div class="w-full text-center">
+        <h1 class="font-bold text-3xl font-Chakra lg:text-4xl">
+          Qualification
+        </h1>
+        <h4 class="font-Play font-medium text-base mt-2 md:text-lg lg:text-xl">
+          my journey
+        </h4>
+      </div>
+        <div class="w-full flex justify-center mt-9">
+          <img src="dist/img/qualification/toga.png" alt="kalender" width="40" />
+          <a
+            id="educationBtn"
+            class="uppercase font-bold cursor-pointer text-lg mt-2 ml-2 text-blue-600 hover:text-blue-600"
+            
+          >
+            education
+          </a>
+        
+          <div class="px-3 sm:px-10"></div>
+          <img src="dist/img/qualification/man.png" alt="kalender" width="35" />
+          <a
+            id="experienceBtn"
+            class="uppercase font-bold cursor-pointer text-lg mt-2 ml-2 hover:text-blue-600"
+            
+          >
+            experience
+          </a>
+          
+        </div>
+        <div id="element1" class="container mt-10">
+          <div class="w-full flex justify-center">
+            <div class="block">
+              <h2 class="font-Poppins font-medium text-base">
+                Smk 6 Muhammadiyah
+              </h2>
+              <h4 class="font-Ubuntu text-base py-[6px]">Rogojampi</h4>
+              <p class="flex italic font-Ubuntu text-sm">
+                <img
+                  src="dist/img/qualification/calendar.png"
+                  alt="kalender"
+                  width="20"
+                />2022 - SEKARANG
+              </p>
+            </div>
+            <div class="block ml-10 relative">
+              <span
+                class="inline-block w-[15px] h-[15px] rounded-full bg-blue-600 z-10"
+              ></span>
+              <span
+                class="block w-[2px] h-[120px] bg-blue-500 ml-[6px] -z-30 absolute top-1"
+              ></span>
+            </div>
+          </div>
+          <div class="w-full flex justify-center mt-10">
+            <div class="block">
+              <h2 class="font-Poppins font-medium text-base">Smpn 1 Rogojampi</h2>
+              <h4 class="font-Ubuntu text-base py-[6px]">Rogojampi</h4>
+              <p class="flex italic font-Ubuntu text-sm">
+                <img
+                  src="dist/img/qualification/calendar.png"
+                  alt="kalender"
+                  width="20"
+                />2019-2022
+              </p>
+            </div>
+            <div class="block ml-20 relative">
+              <span
+                class="inline-block w-[15px] h-[15px] rounded-full bg-blue-600 z-10"
+              ></span>
+              <span
+                class="block w-[2px] h-[120px] bg-blue-500 ml-[6px] -z-30 absolute top-1"
+              ></span>
+            </div>
+          </div>
+          <div class="w-full flex justify-center mt-10">
+            <div class="block">
+              <h2 class="font-Poppins font-medium text-base">Sdn 1 Pengatigan</h2>
+              <h4 class="font-Ubuntu text-base py-[6px]">Pengatigan</h4>
+              <p class="flex italic font-Ubuntu text-sm">
+                <img
+                  src="dist/img/qualification/calendar.png"
+                  alt="kalender"
+                  width="20"
+                />2012-2018
+              </p>
+            </div>
+            <div class="block ml-[90px] lg:ml-[92px] relative">
+              <span
+                class="inline-block w-[15px] h-[15px] rounded-full bg-blue-600 z-10"
+              ></span>
+              <span
+                class="block w-[2px] h-[100px] bg-blue-500 ml-[6px] -z-30 absolute top-1"
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div id="element2" class="container mt-10 hidden">
+          <div class="w-full flex justify-center">
+            <div class="block order-2">
+              <h2 class="font-Poppins font-medium text-base">Tenis Meja</h2>
+              <h4 class="font-Ubuntu text-base py-[6px]">1 years</h4>
+            </div>
+            <div class="block mr-[60px] relative order-1">
+              <span
+                class="inline-block w-[15px] h-[15px] rounded-full bg-blue-600 z-10"
+              ></span>
+              <span
+                class="block w-[2px] h-[120px] bg-blue-500 ml-[6px] -z-30 absolute top-1"
+              ></span>
+            </div>
+          </div>
+          <div class="w-full flex justify-center mt-10">
+            <div class="block order-2">
+              <h2 class="font-Poppins font-medium text-base">Sepak Bola</h2>
+              <h4 class="font-Ubuntu text-base py-[6px]">1,5 years</h4>
+            </div>
+            <div class="block mr-[56px] relative order-1">
+              <span
+                class="inline-block w-[15px] h-[15px] rounded-full bg-blue-600 z-10"
+              ></span>
+              <span
+                class="block w-[2px] h-[120px] bg-blue-500 ml-[6px] -z-30 absolute top-1"
+              ></span>
+            </div>
+          </div>
+          <div class="w-full flex justify-center mt-10">
+            <div class="block order-2">
+              <h2 class="font-Poppins font-medium text-base">Taekwondo</h2>
+              <h4 class="font-Ubuntu text-base py-[6px]">2 month</h4>
+            </div>
+            <div class="block mr-[52px] relative order-1">
+              <span
+                class="inline-block w-[15px] h-[15px] rounded-full bg-blue-600 z-10"
+              ></span>
+              <span
+                class="block w-[2px] h-[100px] bg-blue-500 ml-[6px] -z-30 absolute top-1"
+              ></span>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- qualification end -->
+
+    <!--contact start  -->
+    <section id="contact" class="mb-32">
+      <div class="w-full text-center">
+        <h1 class="font-bold text-3xl font-Chakra lg:text-4xl">Contact</h1>
+        <h4 class="text-base font-Play font-medium mt-2 md:text-lg lg:text-xl">
+          my personal information
+        </h4>
+      </div>
+      <div class="container mt-16 flex flex-col sm:flex-row">
+        <div class="w-full flex justify-center mt-8">
+          <i data-feather="phone" class="mt-5"></i>
+          <div class="block px-4">
+            <h3 class="font-semibold font-Poppins mt-2">Nomor Telephone</h3>
+            <h4 class="font-Ubuntu text-base py-2">+62xx.xxxx.xx67</h4>
+          </div>
+        </div>
+        <div class="w-full flex justify-center mt-8">
+          <i data-feather="mail" class="mt-5"></i>
+          <div class="block px-4">
+            <h3 class="font-semibold font-Poppins mt-2">Email</h3>
+            <h4 class="font-Ubuntu text-base py-2">rido****@gmail.com</h4>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row">
+        <div class="w-full flex justify-center mt-8">
+          <i data-feather="instagram" class="mt-5"></i>
+          <div class="block px-4">
+            <h3 class="font-semibold font-Poppins mt-2">Massage</h3>
+            <h4 class="font-Ubuntu text-base py-2">@ridoferdia</h4>
+          </div>
+        </div>
+        <div class="w-full flex justify-center mt-8">
+          <i data-feather="map-pin" class="mt-5"></i>
+          <div class="block px-4">
+            <h3 class="font-semibold font-Poppins mt-2">Lokasi</h3>
+            <h4 class="font-Ubuntu text-base py-2">pengatigan,rogojampi</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="bg-cyan-700 pt-10 pb-20">
+      <div class="container flex flex-col lg:flex-row">
+        <div class="w-full ml-4 mb-12">
+          <h1 class="font-Poppins text-2xl font-bold lg:text-3xl">
+            Rido Ferdian
+          </h1>
+          <h4 class="font-Ubuntu text-base lg:text-lg font-medium">
+            Beginner Backend
+          </h4>
+        </div>
+        <div class="w-full px-4 mb-12">
+          <ul class="font-semibold font-Ubuntu lg:flex">
+            <li class="">
+              <a href="#" class="footer">Beranda</a>
+            </li>
+            <li class="">
+              <a href="#about" class="footer">About Me</a>
+            </li>
+            <li class="">
+              <a href="#skill" class="footer">Skills</a>
+            </li>
+            <li class="">
+              <a href="#project" class="footer">Project</a>
+            </li>
+            <li class="">
+              <a href="#kualifikasi" class="footer"> Qualification</a>
+            </li>
+            <li class="">
+              <a href="#contact" class="footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex mb-5">
+            <!-- yt -->
+            <a
+              href="https://youtube.com/@crasgmg3862"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              ><svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>YouTube</title>
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                /></svg
+            ></a>
+            <a
+              href="https://instagram.com/ridoferdia"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://facebook.com/ridoferdia"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Facebook</title>
+                <path
+                  d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
