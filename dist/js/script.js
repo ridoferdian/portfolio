@@ -55,3 +55,5 @@ experienceBtn.addEventListener('click', function() {
     educationBtn.classList.remove('text-blue-600'); // Remove active class from education
 });
 
+
+AOS.init();
