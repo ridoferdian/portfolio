@@ -56,4 +56,6 @@ experienceBtn.addEventListener('click', function() {
 });
 
 
-AOS.init();
+AOS.init({
+  once: true,
+});
