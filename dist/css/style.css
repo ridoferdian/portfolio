@@ -1,0 +1,317 @@
+.bg-animated {
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #1e3a8a);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Floating shapes - bergerak keliling layar */
+.floating-shape {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.shape-1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  animation: floatAround1 30s ease-in-out infinite;
+}
+
+.shape-2 {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  animation: floatAround2 35s ease-in-out infinite;
+}
+
+.shape-3 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  animation: floatAround3 40s ease-in-out infinite;
+}
+
+.shape-4 {
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+  animation: floatAround4 32s ease-in-out infinite;
+}
+
+.shape-5 {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+  animation: floatAround5 38s ease-in-out infinite;
+}
+
+@keyframes floatAround1 {
+  0% {
+    top: 10%;
+    left: 10%;
+    transform: scale(1);
+  }
+  25% {
+    top: 70%;
+    left: 20%;
+    transform: scale(1.2);
+  }
+  50% {
+    top: 80%;
+    left: 70%;
+    transform: scale(0.9);
+  }
+  75% {
+    top: 30%;
+    left: 80%;
+    transform: scale(1.1);
+  }
+  100% {
+    top: 10%;
+    left: 10%;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatAround2 {
+  0% {
+    top: 60%;
+    right: 10%;
+    transform: scale(1);
+  }
+  25% {
+    top: 20%;
+    right: 60%;
+    transform: scale(1.1);
+  }
+  50% {
+    top: 10%;
+    right: 80%;
+    transform: scale(0.85);
+  }
+  75% {
+    top: 80%;
+    right: 30%;
+    transform: scale(1.15);
+  }
+  100% {
+    top: 60%;
+    right: 10%;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatAround3 {
+  0% {
+    bottom: 20%;
+    left: 20%;
+    transform: scale(1);
+  }
+  25% {
+    bottom: 70%;
+    left: 70%;
+    transform: scale(1.2);
+  }
+  50% {
+    bottom: 10%;
+    left: 50%;
+    transform: scale(0.9);
+  }
+  75% {
+    bottom: 60%;
+    left: 15%;
+    transform: scale(1.05);
+  }
+  100% {
+    bottom: 20%;
+    left: 20%;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatAround4 {
+  0% {
+    top: 40%;
+    left: 50%;
+    transform: scale(1);
+  }
+  25% {
+    top: 15%;
+    left: 25%;
+    transform: scale(1.15);
+  }
+  50% {
+    top: 65%;
+    left: 10%;
+    transform: scale(0.95);
+  }
+  75% {
+    top: 85%;
+    left: 60%;
+    transform: scale(1.1);
+  }
+  100% {
+    top: 40%;
+    left: 50%;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatAround5 {
+  0% {
+    top: 50%;
+    right: 40%;
+    transform: scale(1);
+  }
+  25% {
+    top: 75%;
+    right: 15%;
+    transform: scale(1.1);
+  }
+  50% {
+    top: 25%;
+    right: 70%;
+    transform: scale(0.9);
+  }
+  75% {
+    top: 5%;
+    right: 45%;
+    transform: scale(1.2);
+  }
+  100% {
+    top: 50%;
+    right: 40%;
+    transform: scale(1);
+  }
+}
+
+/* Grid pattern overlay */
+.grid-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Content wrapper */
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+/* Auto-type fix */
+.auto-type {
+  min-height: 3rem;
+  display: block;
+}
+
+/* Mobile menu animations */
+#mobile-menu {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+#mobile-menu.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Menu items stagger animation */
+.mobile-menu-link {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-out;
+}
+
+#mobile-menu.show .mobile-menu-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#mobile-menu.show .mobile-menu-link:nth-child(1) {
+  transition-delay: 0.1s;
+}
+#mobile-menu.show .mobile-menu-link:nth-child(2) {
+  transition-delay: 0.15s;
+}
+#mobile-menu.show .mobile-menu-link:nth-child(3) {
+  transition-delay: 0.2s;
+}
+#mobile-menu.show .mobile-menu-link:nth-child(4) {
+  transition-delay: 0.25s;
+}
+#mobile-menu.show .mobile-menu-link:nth-child(5) {
+  transition-delay: 0.3s;
+}
+
+/* Hamburger icon animation */
+.hamburger-line {
+  transition: all 0.3s ease;
+}
+
+#mobile-menu-button.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#mobile-menu-button.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-menu-button.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.auto-type {
+  display: inline-block;
+}
+
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--color-headline);
+  transition: width 0.3s ease;
+}
+
+.nav-link.active {
+  color: var(--color-headline);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  width: 70%;
+}

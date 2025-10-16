@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
+  --font-fira-code: "Fira Code", monospace;
+  --font-nunito: "Nunito", sans-serif;
+  --font-jetBrains: "JetBrains Mono", monospace;
+
+  --color-primary: #0f0e17;
+  --color-secondary: #72757e;
+  --color-headline: #fffffe;
+  --color-card: #242629;
+}
+
+.navbar {
+  @apply px-3 py-2 text-sm text-[#fffffe] border-b-2 border-transparent hover:border-orange-600 hover:text-orange-600 transition duration-400;
+}
+
+.card-skill {
+  @apply bg-card py-2 px-6 rounded-lg text-center flex justify-center flex-col items-center hover:scale-105 hover:shadow-lg shadow-gray-700 transition-all duration-300 ease-in-out hover:-translate-y-1 cursor-pointer;
+}
