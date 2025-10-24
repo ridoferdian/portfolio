@@ -333,3 +333,26 @@ section {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.modal-backdrop {
+  backdrop-filter: blur(8px);
+}
+pre {
+  overflow-x: auto;
+}
+code {
+  font-family: "Courier New", monospace;
+}
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
